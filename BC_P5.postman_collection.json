@@ -1,0 +1,389 @@
+{
+	"info": {
+		"_postman_id": "a7b05396-c210-47d8-99da-703ae6dd3470",
+		"name": "BC_P5",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET /star/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/star/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"star",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /star/ownerof/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/star/ownerof/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"star",
+						"ownerof",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /star/isApprovedForAll/?",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/star/isApprovedForAll?owner=0x4fda5baf52b8ff93399673f3f89a93ef31066ad8&operator=0x15e542f44d1f0811ec4453fa5493eff1859f89b6",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"star",
+						"isApprovedForAll"
+					],
+					"query": [
+						{
+							"key": "owner",
+							"value": "0x4fda5baf52b8ff93399673f3f89a93ef31066ad8"
+						},
+						{
+							"key": "operator",
+							"value": "0x15e542f44d1f0811ec4453fa5493eff1859f89b6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH /star/setApprovalForAll",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"to\": \"0x15e542f44d1f0811ec4453fa5493eff1859f89b6\",\n\t\"approved\": false,\n\t\"owner\": \"0x4fda5baf52b8ff93399673f3f89a93ef31066ad8\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/star/setApprovalForAll",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"star",
+						"setApprovalForAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /star/starsForSale/1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/star/starsForSale/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"star",
+						"starsForSale",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH /star/putStarUpForSale",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"token\" : 1,\n\t\"price\": 100,\n\t\"owner\" : \"0x4fda5baf52b8ff93399673f3f89a93ef31066ad8\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/star/putStarUpForSale",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"star",
+						"putStarUpForSale"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /star/checkIfStarExist/?cent=1&dec=2&mag=3",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/star/checkIfStarExist/?cent=1&dec=2&mag=3",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"star",
+						"checkIfStarExist",
+						""
+					],
+					"query": [
+						{
+							"key": "cent",
+							"value": "1"
+						},
+						{
+							"key": "dec",
+							"value": "2"
+						},
+						{
+							"key": "mag",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /star/getApproved/1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/star/getApproved/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"star",
+						"getApproved",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH /star/approve",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"to\" : \"0x15e542f44d1f0811ec4453fa5493eff1859f89b6\",\n\t\"token\" : 1,\n\t\"owner\" : \"0x4fda5baf52b8ff93399673f3f89a93ef31066ad8\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/star/approve",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"star",
+						"approve"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /star",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"PostmanStar1\",\n\t\"story\": \"PostmanStar1Story\",\n\t\"cent\": \"1.1\",\n\t\"dec\": \"2.2\",\n\t\"mag\": \"3.3\",\n\t\"token\": \"1\",\n\t\"owner\": \"0x4fda5baf52b8ff93399673f3f89a93ef31066ad8\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/star",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"star"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH /star/buyStar",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"token\": \"1\",\n\t\"buyer\": \"0x15e542f44d1f0811ec4453fa5493eff1859f89b6\",\n\t\"value\": \"150\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/star/buyStar",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"star",
+						"buyStar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH /star/safeTransferFrom",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"from\": \"0x15e542f44d1f0811ec4453fa5493eff1859f89b6\",\n\t\"to\": \"0x4fda5baf52b8ff93399673f3f89a93ef31066ad8\",\n\t\"token\": 1,\n\t\"owner\": \"0x15e542f44d1f0811ec4453fa5493eff1859f89b6\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/star/safeTransferFrom",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"star",
+						"safeTransferFrom"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
